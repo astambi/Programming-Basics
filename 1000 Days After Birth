@@ -10,8 +10,7 @@ namespace _1000_Days_After_Birth
     {
         static void Main(string[] args)
         {
-            string dateinput = Console.ReadLine();
-            var date = DateTime.ParseExact(dateinput, "dd-MM-yyyy", null);
+            var date = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy", null);
             DateTime futuredate = date.AddDays(999);
             Console.WriteLine("{0:dd-MM-yyyy}", futuredate);            
         }
