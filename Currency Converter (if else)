@@ -1,0 +1,41 @@
+using System;
+
+namespace Currency_Converter
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double amount = double.Parse(Console.ReadLine());
+            string CCY1 = Console.ReadLine();
+            string CCY2 = Console.ReadLine();
+            
+			double FX = 1;
+            if (CCY1 == "USD")
+                FX = FX * 1.79549;
+            else
+            {
+                if (CCY1 == "EUR")
+                    FX = FX * 1.95583;
+                else
+                {
+                    if (CCY1 == "GBP")
+                        FX = FX * 2.53405;
+                }
+            }
+            if (CCY2 == "USD")
+                FX = FX / 1.79549;
+            else
+            {
+                if (CCY2 == "EUR")
+                    FX = FX / 1.95583;
+                else
+                {
+                    if (CCY2 == "GBP")
+                        FX = FX / 2.53405;
+                }
+            }
+            Console.WriteLine(Math.Round(amount * FX,2) + " {0}",CCY2);
+        }
+    }
+}
