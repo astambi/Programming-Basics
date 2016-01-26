@@ -10,7 +10,7 @@ namespace Currency_Converter
       	string CCY1 = Console.ReadLine();
       	string CCY2 = Console.ReadLine();
 
-		    string[] CCYarr = new string[] { "BGN", "USD", "EUR", "GBP" };
+    	string[] CCYarr = new string[] { "BGN", "USD", "EUR", "GBP" };
       	double[] FXarr = new double[] { 1, 1.79549, 1.95583, 2.53405 };
 
 		double FX = 1;
