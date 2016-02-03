@@ -10,25 +10,25 @@ namespace Metric_Converter
     {
         static void Main(string[] args)
         {
-						double number = double.Parse(Console.ReadLine());
-						string sourceMetric = Console.ReadLine().ToLower();
-						string outputMetric = Console.ReadLine().ToLower();
-						
-						double result = number / Coefficient(sourceMetric) * Coefficient(outputMetric);
-						Console.WriteLine("{0} {1}", result, outputMetric);
-		}
+		double number = double.Parse(Console.ReadLine());
+		string sourceMetric = Console.ReadLine().ToLower();
+		string outputMetric = Console.ReadLine().ToLower();
+		
+		double result = number / Coefficient(sourceMetric) * Coefficient(outputMetric);
+		Console.WriteLine("{0} {1}", result, outputMetric);
+	}
 
-		static double Coefficient (string metric)
+	static double Coefficient (string metric)
+	{
+		string[] arrMetric = new string[]{ "m", "km", "cm", "mm", "mi", "in", "ft", "yd"};
+		double[] arrCoefficient = new double[] { 1, 0.001 , 100, 1000, 0.000621371192 , 39.3700787 , 3.2808399 , 1.0936133 };
+		double coefficient = 0;
+		for (int i = 0; i < 8; i++)
 		{
-						string[] arrMetric = new string[]{ "m", "km", "cm", "mm", "mi", "in", "ft", "yd"};
-						double[] arrCoefficient = new double[] { 1, 0.001 , 100, 1000, 0.000621371192 , 39.3700787 , 3.2808399 , 1.0936133 };
-						double coefficient = 0;
-						for (int i = 0; i < 8; i++)
-						{
-							if (metric == arrMetric[i])
-								coefficient = arrCoefficient[i];
-						}
-						return coefficient;
+			if (metric == arrMetric[i])
+				coefficient = arrCoefficient[i];
 		}
+		return coefficient;
+	}
     }
 }
