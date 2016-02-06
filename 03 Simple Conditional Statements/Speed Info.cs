@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,14 +14,14 @@ namespace Speed_Info
 
             if (speed <= 10)
                 Console.WriteLine("slow");
-            else if (speed <= 50)
+            else if (speed > 1000)
+                Console.WriteLine("extremely fast");
+            else if (speed<=50)
                 Console.WriteLine("average");
-            else if (speed <= 150)
+            else if (speed<=150)
                 Console.WriteLine("fast");
-            else if(speed <= 1000)
+            else
                 Console.WriteLine("ultra fast");
-			else
-				Console.WriteLine("extremely fast");
-		}
-	}
+        }
+    }
 }

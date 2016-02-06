@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +18,9 @@ namespace Time___15_Minutes
             if (newhours >= 24)
                 newhours -= 24;
             int newminutes = result % 60;
-            Console.WriteLine("{0}:{1:00}",newhours, newminutes);
+
+            Console.WriteLine("{0}:{1:00}",newhours, newminutes);          
+            //Console.WriteLine("{0}:{1}",newhours, newminutes.ToString().PadLeft(2, '0')); 
         }
     }
 }

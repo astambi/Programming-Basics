@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +11,7 @@ namespace Password_Guess
         static void Main(string[] args)
         {
             string text = Console.ReadLine();
+
             if (text == "s3cr3t!P@ssw0rd")
                 Console.WriteLine("Welcome");
             else
