@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,10 +11,9 @@ namespace Excellent_Result
         static void Main(string[] args)
         {
             double result = double.Parse(Console.ReadLine());
+
             if (result >= 5.5)
-            {
                 Console.WriteLine("Excellent!");
-            }
         }
     }
 }
