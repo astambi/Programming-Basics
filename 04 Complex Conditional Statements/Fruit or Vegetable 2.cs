@@ -13,8 +13,8 @@ namespace Fruit_or_Vegetable_2
             string product = Console.ReadLine().ToLower();
             string productType = "unknown";
 
-            string[] fruits = new string[] { "banana", "apple", "kiwi", "cherry", "lemon", "grapes" };
-            string[] vegetables = new string[] { "tomato", "cucumber", "pepper", "carrot", "carrot", "carrot" };
+            string[] fruits = new string[]      { "banana", "apple", "kiwi", "cherry", "lemon", "grapes" };
+            string[] vegetables = new string[]  { "tomato", "cucumber", "pepper", "carrot", "carrot", "carrot" };
 
             for (int i = 0; i < 6; i++)
             {

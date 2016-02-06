@@ -14,10 +14,10 @@ namespace Trade_Comissions_2
             double sales = double.Parse(Console.ReadLine());
             double commission = 0;
 
-            int[] limits = new int[]                    { 0, 500, 1000, 10000 };
-            double[] commissionsSofia = new double[]    { 0.05, 0.07, 0.08, 0.12 };
-            double[] commissionsVarna = new double[]    { 0.045, 0.075, 0.10, 0.13 };
-            double[] commissionsPlovdiv = new double[]  { 0.055, 0.08, 0.12, 0.145 };
+            int[] limits = new int[]                    {0, 500, 1000, 10000 };
+            double[] commissionsSofia = new double[]    {0.05, 0.07, 0.08, 0.12 };
+            double[] commissionsVarna = new double[]    {0.045, 0.075, 0.10, 0.13 };
+            double[] commissionsPlovdiv = new double[]  {0.055, 0.08, 0.12, 0.145 };
 
             if (town == "sofia")
             {

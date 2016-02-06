@@ -15,10 +15,10 @@ namespace Small_Shop_2
             double quantity = double.Parse(Console.ReadLine());
             double price = 0;
             
-            string[] products = new string[] { "coffee", "water", "beer", "sweets", "peanuts" };
-            double[] productPricesSofia =       new double[] {0.50 ,0.80, 1.20, 1.45, 1.60};
-            double[] productPricesPlovdiv =     new double[] {0.40 ,0.70, 1.15, 1.30, 1.50};
-            double[] productPricesVarna =       new double[] {0.45, 0.70, 1.10, 1.35, 1.55};
+            string[] products = new string[]                {"coffee", "water", "beer", "sweets", "peanuts"};
+            double[] productPricesSofia = new double[]      {0.50, 0.80, 1.20, 1.45, 1.60};
+            double[] productPricesPlovdiv = new double[]    {0.40, 0.70, 1.15, 1.30, 1.50};
+            double[] productPricesVarna = new double[]      {0.45, 0.70, 1.10, 1.35, 1.55};
             
             for (int i = 0; i < 5; i++)
             {

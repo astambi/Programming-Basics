@@ -11,12 +11,12 @@ namespace Personal_Titles
         static void Main(string[] args)
         {
             double age = double.Parse(Console.ReadLine());
-            string gender = Console.ReadLine().ToLower().ToLower();
+            string gender = Console.ReadLine().ToLower();
             string title = "";
 
-            string[] genders = new string[] { "m", "f" };
-            string[] salutationFormal = new string[] { "Mr.", "Ms." };
-            string[] salutationTeen = new string[] { "Master", "Miss" };
+            string[] genders = new string[]             {"m", "f"};
+            string[] salutationFormal = new string[]    {"Mr.", "Ms."};
+            string[] salutationTeen = new string[]      {"Master", "Miss"};
 
             for (int i = 0; i < 2; i++)
             {
