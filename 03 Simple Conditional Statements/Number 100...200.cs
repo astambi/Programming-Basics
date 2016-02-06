@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +11,7 @@ namespace Number_100._._._200
         static void Main(string[] args)
         {
             int number = int.Parse(Console.ReadLine());
+
             if (number < 100)
                 Console.WriteLine("Less than 100");
             else if (number > 200)
