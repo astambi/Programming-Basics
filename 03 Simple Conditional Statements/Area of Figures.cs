@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +27,7 @@ namespace Area_of_Figures
             else if (figure == "circle")
             {
                 double r = double.Parse(Console.ReadLine());
-                area = r * r * Math.PI;
+                area = Math.PI * r * r;
             }
             else if (figure == "triangle")
             {
@@ -35,6 +35,7 @@ namespace Area_of_Figures
                 double h = double.Parse(Console.ReadLine());
                 area = a * h / 2;
             }
+
             Console.WriteLine(Math.Round(area,3));
         }
     }
