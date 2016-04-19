@@ -1,1 +1,1 @@
-Programming Basics 2016 @ SoftUni
+Programming Basics - January 2016 @ SoftUni
